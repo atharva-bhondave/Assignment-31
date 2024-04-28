@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            
+        }
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Product Preview</h1>
+    <div class="container">
+    <img src="goku.webp" id="mi">
+    <div class="img-container">
+        <img src="gokum.webp" class="image" onclick="changeImage('goku.webp')" />
+        <img src="goku-2m.webp" class="image" onclick="changeImage('goku-2.webp')" />
+        <img src="goku-3m.webp" class="image" onclick="changeImage('goku-3.webp')" />
+        <img src="goku-4m.webp" class="image" onclick="changeImage('goku-4.webp')" />
+    </div>
+    </div>
+</body>
+<script>
+    function changeImage(iname) {
+        const mainig = document.getElementById('mi');
+        mainig.src = iname;
+    }
+</script>
+</html>
